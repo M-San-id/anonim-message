@@ -1,0 +1,89 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #232526 0%, #414345 100%);
+  padding: 0;
+  margin: 0;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  background: rgba(30, 30, 40, 0.95);
+  border-radius: 20px;
+  box-shadow: 0 0 24px 4px #00e6ff, 0 0 0 2px #232526;
+  padding: 2.5rem 2rem;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  border: 1.5px solid #00e6ff;
+  transition: box-shadow 0.3s;
+}
+
+.form:focus-within {
+  box-shadow: 0 0 32px 8px #00e6ff, 0 0 0 2px #232526;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.title {
+  font-size: 1.2rem;
+  color: #00e6ff;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.5px;
+}
+
+textarea {
+  border-radius: 12px;
+  border: 1.5px solid #00e6ff;
+  background: #181920;
+  color: #fff;
+  font-size: 1rem;
+  padding: 1rem;
+  resize: vertical;
+  outline: none;
+  box-shadow: 0 0 8px #00e6ff33;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+textarea:focus {
+  border: 1.5px solid #00e6ff;
+  box-shadow: 0 0 16px #00e6ff99;
+}
+
+button[type="submit"] {
+  background: linear-gradient(90deg, #00e6ff 0%, #0072ff 100%);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 0.8rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 0 12px #00e6ff99;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+button[type="submit"]:hover {
+  background: linear-gradient(90deg, #0072ff 0%, #00e6ff 100%);
+  box-shadow: 0 0 24px #00e6ffcc;
+}
+
+p {
+  margin-top: 1.5rem;
+  color: #fff;
+  font-size: 1rem;
+  text-shadow: 0 0 8px #00e6ff77;
+}
