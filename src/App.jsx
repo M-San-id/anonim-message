@@ -10,16 +10,16 @@ function App() {
     e.preventDefault();
     setStatus("Sending...");
 
-    // Ganti dengan Service ID, Template ID, dan Public Key Anda dari EmailJS
+   
     const serviceId = "service_hwda72l";
     const templateId = "template_7silzct";
-    const publicKey = "C6JlIiElk2rvlkiuO"; // Ini aman untuk diungkapkan di sisi klien
+    const publicKey = "C6JlIiElk2rvlkiuO"; 
 
     emailjs.sendForm(serviceId, templateId, form.current, publicKey).then(
       (result) => {
         console.log(result.text);
-        setStatus("Email sent successfully!");
-        form.current.reset(); // Reset form
+        setStatus("Fesan berhasil dikirim");
+        form.current.reset(); 
       },
       (error) => {
         console.log(error.text);
